@@ -1,6 +1,6 @@
 # Simple_human (Sistema de  Registro de Candidatos)
 
-### Este programa permite registrar y gestionar candidatos en una base de datos. Las funcionalidades principales incluyen:
+Este programa permite registrar y gestionar candidatos en una base de datos. Las funcionalidades principales incluyen:
 - Alta de nuevos candidatos
 - Consulta de candidatos por ID
 - Listado de todos los candidatos
