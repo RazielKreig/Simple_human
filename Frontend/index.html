@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Alta de Candidatos</title>
+</head>
+<body>
+  <h1>Alta de Candidatos</h1>
+
+  
+  <!-- Formulario para ingresar datos de un nuevo candidato -->
+  <form id="formulario">
+    <input type="text" id="nombre" placeholder="Nombre" required />
+    <input type="text" id="apellido" placeholder="Apellido" required />
+    <input type="text" id="mail" placeholder="Correo electrónico" required />
+    <input type="text" id="institucionEducativa" placeholder="Institución" required />
+    <input type="text" id="carrera" placeholder="Carrera cursada" required />
+    <input type="number" id="promedioAcademico" placeholder="Promedio académico" step="0.1" required />
+    <input type="text" id="habilidades" placeholder="Habilidades" />
+    <input type="text" id="experienciaLaboral" placeholder="Experiencia" />
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- Contenedor para mostrar mensajes de respuesta del servidor -->
+  <p id="respuesta"></p>
+
+  <!-- Botón para listar candidatos -->
+  <button id="btnListar">Mostrar Candidatos</button>
+
+  <!-- Contenedor donde se mostrará la lista -->
+  <div id="listaCandidatos" style="margin-top: 20px;"></div>
+
+  <!-- Input y botón para buscar un candidato específico por ID -->
+  <input type="number" id="inputIdCandidato" placeholder="ID del candidato" />
+  <button id="btnBuscarCandidato">Buscar Candidato</button>
+  
+  <!-- Botón para generar y mostrar un reporte en PDF -->
+  <button id="btnGenerarReporte">Generar Reporte PDF</button>
+
+  <!-- Botón para descargar un archivo JSON con todos los candidatos -->
+  <button id="btnDescargarJSON">Descargar JSON de Candidatos</button>
+  
+  <script src="script.js"></script>
+</body>
+</html>
