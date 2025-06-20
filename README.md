@@ -16,7 +16,13 @@
 - **Base de datos:** MySql
 - **Extensión para Visual Studio Code:** Live Server
 
-### 2. Cómo ejecutar el proyecto
+### 2. Configuración para Base de Datos
+
+- **Usuario:** root
+- **Contraseña:** root
+- **Base de datos:** simple_human
+
+### 3. Cómo ejecutar el proyecto
 
 **Backend (Spring Boot)**
 - Abrí la carpeta del proyecto backend (simple_human) en IntelliJ IDEA.
