@@ -22,6 +22,23 @@ Este programa permite registrar y gestionar candidatos en una base de datos. Las
 - **Contraseña:** root
 - **Base de datos:** simple_human
 
+**Script para crear la base:**
+
+CREATE SCHEMA `simple_human` ;
+
+CREATE TABLE `candidatos` (
+  `idCandidatos` int NOT NULL AUTO_INCREMENT,
+  `mail` char(50) NOT NULL,
+  `nombreCompleto` varchar(50) NOT NULL,
+  `institucionEducativa` varchar(50) NOT NULL,
+  `carrera` varchar(50) NOT NULL,
+  `promedioAcademico` decimal(3,1) NOT NULL,
+  `habilidades` varchar(300) DEFAULT NULL,
+  `experienciaLaboral` varchar(300) DEFAULT NULL,
+  PRIMARY KEY (`idCandidatos`),
+  UNIQUE KEY `mailCandidatos_UNIQUE` (`mail`)
+)
+
 ### 3. Cómo ejecutar el proyecto
 
 **Backend (Spring Boot)**
